@@ -1,20 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {connect} from 'react-redux'
 import {addTodo} from '../actions'
 
 function AddTodo({dispatch}) {
-  let input;
+  const [input, setInput] = useState('')
+  // let input;
   const submitTodo = e => {
     e.preventDefault()
-    if (!input.value.trim()) {
+    if (!input.trim()) {
       return
     }
-    dispatch(addTodo(input.value))
+    dispatch(addTodo(input))
   }
   return (
     <div>
       <form onSubmit={submitTodo}>
-        <input type="text" ref={el => input = el} />
+        <input type="text" onChange={e => setInput(e.target.value)} />
+        {console.log(input)}
         <button type="submit">Add Todo</button>
       </form>
     </div>
