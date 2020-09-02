@@ -1,0 +1,11 @@
+.add_todo_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+	width: 40%;
+	margin: 5vh auto;
+}
+form {
+	display: flex;
+}

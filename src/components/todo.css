@@ -1,0 +1,9 @@
+.cross-btn {
+	padding: 0 10px;
+	transition: 300ms all;
+}
+.cross-btn:hover {
+	cursor: pointer;
+	background-color: lightgray;
+	color: black;
+}

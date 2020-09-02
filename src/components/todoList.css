@@ -1,0 +1,8 @@
+.todo_list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	background-color: #333;
+	color: white;
+	padding: 5vh 0;
+}
